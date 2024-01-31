@@ -9,6 +9,7 @@ import { router as authRouter } from "./routes/authRoutes";
 import { router as userRouter } from "./routes/userRoutes";
 import { router as articleRouter } from "./routes/articleRoutes";
 import { router as videoRouter } from "./routes/videoRoutes";
+import { router as posyanduRouter } from "./routes/posyanduRoutes";
 
 dotenv.config();
 
@@ -32,6 +33,7 @@ app.use("/auth", authRouter);
 app.use("/user", userRouter);
 app.use("/article", articleRouter);
 app.use("/video", videoRouter);
+app.use("/posyandu", posyanduRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.status || 500;
