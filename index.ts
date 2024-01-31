@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import { config } from "./config";
 
 import { router as authRouter } from "./routes/authRoutes";
+import { router as userRouter } from "./routes/userRoutes";
 import { router as articleRouter } from "./routes/articleRoutes";
 import { router as videoRouter } from "./routes/videoRoutes";
 
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRouter);
+app.use("/user", userRouter);
 app.use("/article", articleRouter);
 app.use("/video", videoRouter);
 
