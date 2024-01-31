@@ -1,13 +1,16 @@
 import express, { NextFunction, Request, Response } from "express";
 import * as userService from "../services/userServices";
 import { MulterRequest, saveFile } from "../helpers/fileHelper";
+import { JWTRequest, jwtAuthMiddleware } from "../middleware/jwtAuth";
 
 export const router = express.Router();
 
 router.get("/", async (req: Request, res: Response, next) => {
+  const id = parseInt((req as JWTRequest).user.id);
+
   try {
     const users = await userService.myProfile({
-      id: parseInt(req.params.id),
+      id,
     });
     res.json({
       message: "success",
@@ -18,12 +21,13 @@ router.get("/", async (req: Request, res: Response, next) => {
   }
 });
 
-router.put("/:id", async (req, res, next) => {
+router.put("/", async (req, res, next) => {
   const { name, email, password } = req.body;
+  const id = parseInt((req as JWTRequest).user.id);
 
   try {
     const user = await userService.updateProfile({
-      id: parseInt(req.params.id),
+      id,
       name,
       email,
       password,
@@ -37,12 +41,13 @@ router.put("/:id", async (req, res, next) => {
   }
 });
 
-router.put("/:id/image", saveFile("user"), async (req, res, next) => {
+router.put("/image", saveFile("user"), async (req, res, next) => {
   const image = (req as MulterRequest).uploadedFileName;
+  const id = parseInt((req as JWTRequest).user.id);
 
   try {
     const user = await userService.updateProfileImage({
-      id: parseInt(req.params.id),
+      id,
       image,
     });
     res.json({

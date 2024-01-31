@@ -13,6 +13,7 @@ import { router as posyanduRouter } from "./routes/posyanduRoutes";
 import { router as recomendationRouter } from "./routes/recomendationRoutes";
 import { router as monitoringRouter } from "./routes/monitoringRoutes";
 import { router as babyRouter } from "./routes/babyRoutes";
+import { jwtAuthMiddleware } from "./middleware/jwtAuth";
 
 dotenv.config();
 
@@ -33,7 +34,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRouter);
-app.use("/user", userRouter);
+app.use("/user", jwtAuthMiddleware, userRouter);
 app.use("/article", articleRouter);
 app.use("/video", videoRouter);
 app.use("/posyandu", posyanduRouter);
