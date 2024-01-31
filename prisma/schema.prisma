@@ -45,8 +45,8 @@ model Posyandu {
 
 model Baby {
   id            Int             @id @default(autoincrement())
-  UserId        Int?
-  user          User?           @relation(fields: [UserId], references: [id])
+  userId        Int
+  user          User            @relation(fields: [userId], references: [id])
   name          String
   dob           DateTime
   gender        Gender          @default(male)
