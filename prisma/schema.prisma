@@ -1,0 +1,108 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id         Int       @id @default(autoincrement())
+  email      String    @unique
+  password   String
+  role       Role      @default(user)
+  posyanduId Int?
+  posyandu   Posyandu? @relation(fields: [posyanduId], references: [id])
+  baby       Baby[]
+  article    Article[]
+  video      Video[]
+  createdAt  DateTime  @default(now())
+  updatedAt  DateTime  @updatedAt
+}
+
+enum Role {
+  user
+  operator
+  admin
+}
+
+model Posyandu {
+  id        Int      @id @default(autoincrement())
+  name      String
+  address   String
+  phone     String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  users     User[]
+}
+
+model Baby {
+  id            Int             @id @default(autoincrement())
+  UserId        Int?
+  user          User?           @relation(fields: [UserId], references: [id])
+  name          String
+  dob           DateTime
+  gender        Gender          @default(male)
+  Monitoring    Monitoring[]
+  Recomendation Recomendation[]
+}
+
+enum Gender {
+  male
+  female
+}
+
+model Monitoring {
+  id        Int      @id @default(autoincrement())
+  babyId    Int?
+  baby      Baby?    @relation(fields: [babyId], references: [id])
+  height    Float
+  weight    Float
+  head      Float
+  month     DateTime
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Recomendation {
+  id        Int      @id @default(autoincrement())
+  babyId    Int?
+  baby      Baby?    @relation(fields: [babyId], references: [id])
+  title     String
+  desc      String
+  type      String
+  month     DateTime
+  isCheck   Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Article {
+  id        Int      @id @default(autoincrement())
+  title     String
+  desc      String
+  image     String
+  content   String   @db.Text
+  published Boolean  @default(false)
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Video {
+  id        Int      @id @default(autoincrement())
+  title     String
+  desc      String
+  image     String
+  url       String
+  published Boolean  @default(false)
+  userId    Int
+  user      User     @relation(fields: [userId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
