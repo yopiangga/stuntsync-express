@@ -1,8 +1,8 @@
-import express, { Request, Response } from "express";
+import express from "express";
 export const router = express.Router();
 
 import { signIn, signUp } from "../services/authServices";
-import { MulterRequest, saveFileUser } from "../helpers/fileHelper";
+import { MulterRequest, saveFile } from "../helpers/fileHelper";
 
 router.post("/signin", async (req, res, next) => {
   const { email, password } = req.body;
@@ -22,12 +22,18 @@ router.post("/signin", async (req, res, next) => {
   }
 });
 
-router.post("/signup", saveFileUser, async (req, res, next) => {
+router.post("/signup", saveFile("user"), async (req, res, next) => {
   const { email, password, name, role, posyanduId } = req.body;
-  const image = (req as MulterRequest).uploadedFileName;
 
   try {
-    const user = await signUp(email, password, name, role, image, posyanduId);
+    const user = await signUp(
+      email,
+      password,
+      name,
+      role,
+      "default.png",
+      posyanduId
+    );
 
     res.json({
       message: "Sign up success",
