@@ -10,6 +10,9 @@ import { router as userRouter } from "./routes/userRoutes";
 import { router as articleRouter } from "./routes/articleRoutes";
 import { router as videoRouter } from "./routes/videoRoutes";
 import { router as posyanduRouter } from "./routes/posyanduRoutes";
+import { router as recomendationRouter } from "./routes/recomendationRoutes";
+import { router as monitoringRouter } from "./routes/monitoringRoutes";
+import { router as babyRouter } from "./routes/babyRoutes";
 
 dotenv.config();
 
@@ -34,6 +37,9 @@ app.use("/user", userRouter);
 app.use("/article", articleRouter);
 app.use("/video", videoRouter);
 app.use("/posyandu", posyanduRouter);
+app.use("/recomendation", recomendationRouter);
+app.use("/monitoring", monitoringRouter);
+app.use("/baby", babyRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.status || 500;
