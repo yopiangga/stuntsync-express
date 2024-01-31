@@ -6,6 +6,7 @@ import dotenv from "dotenv";
 import { config } from "./config";
 
 import { router as authRouter } from "./routes/authRoutes";
+import { router as articleRouter } from "./routes/articleRoutes";
 
 dotenv.config();
 
@@ -26,6 +27,7 @@ app.get("/", (req, res) => {
 });
 
 app.use("/auth", authRouter);
+app.use("/article", articleRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.status || 500;

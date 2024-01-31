@@ -64,14 +64,12 @@ export async function updateArticle({
   id,
   title,
   desc,
-  image,
   content,
   published,
 }: {
   id: number;
   title: string;
   desc: string;
-  image: string;
   content: string;
   published: boolean;
 }) {
@@ -82,9 +80,34 @@ export async function updateArticle({
     data: {
       title,
       desc,
-      image,
       content,
       published,
+    },
+  });
+
+  if (!article) {
+    throw new Error("Something went wrong");
+  }
+
+  let imagePath = config.baseUrl + "/uploads/article/" + article.image;
+  article.image = imagePath;
+
+  return article;
+}
+
+export async function updateArticleImage({
+  id,
+  image,
+}: {
+  id: number;
+  image: string;
+}) {
+  const article = await prisma.article.update({
+    where: {
+      id,
+    },
+    data: {
+      image,
     },
   });
 
