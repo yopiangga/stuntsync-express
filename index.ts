@@ -7,6 +7,7 @@ import { config } from "./config";
 
 import { router as authRouter } from "./routes/authRoutes";
 import { router as articleRouter } from "./routes/articleRoutes";
+import { router as videoRouter } from "./routes/videoRoutes";
 
 dotenv.config();
 
@@ -28,6 +29,7 @@ app.get("/", (req, res) => {
 
 app.use("/auth", authRouter);
 app.use("/article", articleRouter);
+app.use("/video", videoRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.status || 500;
