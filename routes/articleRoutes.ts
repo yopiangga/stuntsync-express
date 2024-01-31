@@ -1,12 +1,13 @@
 import express, { NextFunction, Request, Response } from "express";
 import * as articleService from "../services/articleServices";
 import { MulterRequest, saveFile } from "../helpers/fileHelper";
+import { JWTRequest } from "../middleware/jwtAuth";
 
 export const router = express.Router();
 
 router.get("/", async (req: Request, res: Response, next) => {
   try {
-    const articles = await articleService.getArticles();
+    const articles = await articleService.getArticlesPublished();
     res.json({
       message: "success",
       data: articles,
@@ -31,8 +32,10 @@ router.get("/:id", async (req: Request, res: Response, next) => {
 });
 
 router.post("/", saveFile("article"), async (req, res, next) => {
-  const { title, desc, content, published, userId } = req.body;
+  const { title, desc, content, published } = req.body;
   const image = (req as MulterRequest).uploadedFileName;
+  const userId = parseInt((req as JWTRequest).user.id);
+
   try {
     const article = await articleService.createArticle({
       title,

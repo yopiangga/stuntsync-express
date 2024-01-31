@@ -94,7 +94,7 @@ model Article {
   desc      String
   image     String
   content   String   @db.Text
-  published Boolean  @default(false)
+  published Boolean  @default(true)
   userId    Int
   user      User     @relation(fields: [userId], references: [id])
   createdAt DateTime @default(now())

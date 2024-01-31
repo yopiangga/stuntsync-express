@@ -35,7 +35,7 @@ app.get("/", (req, res) => {
 
 app.use("/auth", authRouter);
 app.use("/user", jwtAuthMiddleware, userRouter);
-app.use("/article", articleRouter);
+app.use("/article", jwtAuthMiddleware, articleRouter);
 app.use("/video", videoRouter);
 app.use("/posyandu", posyanduRouter);
 app.use("/recomendation", recomendationRouter);

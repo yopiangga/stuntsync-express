@@ -1,8 +1,11 @@
 import prisma from "../prisma";
 import { config } from "../config";
 
-export async function getArticles() {
+export async function getArticlesPublished() {
   const articles = await prisma.article.findMany({
+    where: {
+      published: true,
+    },
     include: {
       user: true,
     },
