@@ -62,8 +62,8 @@ enum Gender {
 
 model Monitoring {
   id        Int      @id @default(autoincrement())
-  babyId    Int?
-  baby      Baby?    @relation(fields: [babyId], references: [id])
+  babyId    Int
+  baby      Baby     @relation(fields: [babyId], references: [id])
   height    Float
   weight    Float
   head      Float
