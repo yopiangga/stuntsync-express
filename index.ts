@@ -39,8 +39,8 @@ app.use("/article", jwtAuthMiddleware, articleRouter);
 app.use("/video", jwtAuthMiddleware, videoRouter);
 app.use("/posyandu", jwtAuthMiddleware, posyanduRouter);
 app.use("/recomendation", recomendationRouter);
-app.use("/monitoring", monitoringRouter);
-app.use("/baby", babyRouter);
+app.use("/monitoring", jwtAuthMiddleware, monitoringRouter);
+app.use("/baby", jwtAuthMiddleware, babyRouter);
 
 app.use((err: any, req: Request, res: Response, next: NextFunction) => {
   const statusCode = err.status || 500;

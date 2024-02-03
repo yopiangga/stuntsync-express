@@ -66,8 +66,6 @@ model Monitoring {
   babyId    Int
   baby      Baby     @relation(fields: [babyId], references: [id])
   height    Float
-  weight    Float
-  head      Float
   month     DateTime
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt

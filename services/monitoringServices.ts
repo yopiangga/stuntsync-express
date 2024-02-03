@@ -20,22 +20,16 @@ export async function getMonitoringById(id: number) {
 export async function createMonitoring({
   babyId,
   height,
-  weight,
-  head,
   month,
 }: {
   babyId: number;
   height: number;
-  weight: number;
-  head: number;
   month: string;
 }) {
   const monitoring = await prisma.monitoring.create({
     data: {
       babyId,
       height,
-      weight,
-      head,
       month,
     },
   });
@@ -50,14 +44,10 @@ export async function createMonitoring({
 export async function updateMonitoring({
   id,
   height,
-  weight,
-  head,
   month,
 }: {
   id: number;
   height: number;
-  weight: number;
-  head: number;
   month: string;
 }) {
   const monitoring = await prisma.monitoring.update({
@@ -66,8 +56,6 @@ export async function updateMonitoring({
     },
     data: {
       height,
-      weight,
-      head,
       month,
     },
   });

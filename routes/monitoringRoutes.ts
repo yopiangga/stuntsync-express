@@ -37,8 +37,6 @@ router.post("/", async (req, res, next) => {
     const monitoring = await monitoringService.createMonitoring({
       babyId,
       height,
-      weight,
-      head,
       month,
     });
     res.json({
@@ -57,8 +55,6 @@ router.put("/:id", async (req, res, next) => {
     const monitoring = await monitoringService.updateMonitoring({
       id: parseInt(req.params.id),
       height,
-      weight,
-      head,
       month,
     });
     res.json({
