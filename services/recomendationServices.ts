@@ -28,13 +28,15 @@ export async function createRecomendation({
   desc,
   type,
   month,
+  qty,
 }: {
   userId: number;
   babyId: number;
   title: string;
   desc: string;
   type: string;
-  month: string;
+  month: number;
+  qty: number;
 }) {
   const recomendation = await prisma.recomendation.create({
     data: {
@@ -44,6 +46,7 @@ export async function createRecomendation({
       desc,
       type,
       month,
+      qty,
     },
   });
 
@@ -60,14 +63,14 @@ export async function updateRecomendation({
   desc,
   type,
   month,
-  isCheck,
+  qty,
 }: {
   id: number;
   title: string;
   desc: string;
   type: string;
-  month: string;
-  isCheck?: boolean;
+  month: number;
+  qty: number;
 }) {
   const recomendation = await prisma.recomendation.update({
     where: {
@@ -78,7 +81,7 @@ export async function updateRecomendation({
       desc,
       type,
       month,
-      isCheck,
+      qty,
     },
   });
 

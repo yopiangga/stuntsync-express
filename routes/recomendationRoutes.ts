@@ -32,7 +32,7 @@ router.get("/:id", async (req: Request, res: Response, next) => {
 });
 
 router.post("/", jwtAuthMiddleware, async (req, res, next) => {
-  const { title, desc, babyId, type, month } = req.body;
+  const { title, desc, babyId, type, month, qty } = req.body;
   const userId = parseInt((req as JWTRequest).user.id);
 
   try {
@@ -42,7 +42,8 @@ router.post("/", jwtAuthMiddleware, async (req, res, next) => {
       title,
       desc,
       type,
-      month,
+      month: parseInt(month as string),
+      qty: parseInt(qty as string),
     });
     res.json({
       message: "success",
@@ -54,7 +55,7 @@ router.post("/", jwtAuthMiddleware, async (req, res, next) => {
 });
 
 router.put("/:id", jwtAuthMiddleware, async (req, res, next) => {
-  const { title, desc, type, month, isCheck } = req.body;
+  const { title, desc, type, month, qty } = req.body;
 
   try {
     const recomendation = await recomendationService.updateRecomendation({
@@ -62,8 +63,8 @@ router.put("/:id", jwtAuthMiddleware, async (req, res, next) => {
       title,
       desc,
       type,
-      month,
-      isCheck,
+      month: parseInt(month as string),
+      qty: parseInt(qty as string),
     });
     res.json({
       message: "success",

@@ -11,6 +11,7 @@ import { router as articleRouter } from "./routes/articleRoutes";
 import { router as videoRouter } from "./routes/videoRoutes";
 import { router as posyanduRouter } from "./routes/posyanduRoutes";
 import { router as recomendationRouter } from "./routes/recomendationRoutes";
+import { router as recomendationCheckRouter } from "./routes/recomendationCheckRoutes";
 import { router as monitoringRouter } from "./routes/monitoringRoutes";
 import { router as babyRouter } from "./routes/babyRoutes";
 import { jwtAuthMiddleware } from "./middleware/jwtAuth";
@@ -38,7 +39,8 @@ app.use("/user", jwtAuthMiddleware, userRouter);
 app.use("/article", jwtAuthMiddleware, articleRouter);
 app.use("/video", jwtAuthMiddleware, videoRouter);
 app.use("/posyandu", jwtAuthMiddleware, posyanduRouter);
-app.use("/recomendation", recomendationRouter);
+app.use("/recomendation", jwtAuthMiddleware, recomendationRouter);
+app.use("/recomendation-check", jwtAuthMiddleware, recomendationCheckRouter);
 app.use("/monitoring", jwtAuthMiddleware, monitoringRouter);
 app.use("/baby", jwtAuthMiddleware, babyRouter);
 
