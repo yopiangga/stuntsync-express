@@ -1,6 +1,7 @@
 import express, { NextFunction, Request, Response } from "express";
 import * as videoService from "../services/videoServices";
 import { MulterRequest, saveFile } from "../helpers/fileHelper";
+import { JWTRequest } from "../middleware/jwtAuth";
 
 export const router = express.Router();
 
@@ -29,8 +30,10 @@ router.get("/:id", async (req: Request, res: Response, next) => {
 });
 
 router.post("/", saveFile("video"), async (req, res, next) => {
-  const { title, desc, url, published, userId } = req.body;
+  const { title, desc, url, published } = req.body;
   const image = (req as MulterRequest).uploadedFileName;
+  const userId = parseInt((req as JWTRequest).user.id);
+
   try {
     const video = await videoService.createVideo({
       title,
