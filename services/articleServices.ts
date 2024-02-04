@@ -11,10 +11,19 @@ export async function getArticlesPublished() {
     },
   });
 
+  let imagePath = config.baseUrl + "/uploads/article/";
+  articles.map((article) => {
+    article.image = imagePath + article.image;
+  });
+
   return articles;
 }
 
-export async function getArticleById(id: number) {
+export async function getArticleById({
+  id,
+}: {
+  id: number;
+}) {
   const article = await prisma.article.findUnique({
     where: {
       id,
@@ -23,6 +32,13 @@ export async function getArticleById(id: number) {
       user: true,
     },
   });
+
+  if (!article) {
+    throw new Error("User not found");
+  }
+
+  let imagePath = config.baseUrl + "/uploads/article/";
+  article.image = imagePath + article.image;
 
   return article;
 }

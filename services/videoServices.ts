@@ -8,10 +8,19 @@ export async function getVideos() {
     },
   });
 
+  let videoPath = config.baseUrl + "/uploads/video/";
+  videos.map((video) => {
+    video.image = videoPath + video.image;
+  });
+
   return videos;
 }
 
-export async function getVideoById(id: number) {
+export async function getVideoById({
+  id,
+}: {
+  id: number;
+}) {
   const video = await prisma.video.findUnique({
     where: {
       id,
@@ -20,6 +29,13 @@ export async function getVideoById(id: number) {
       user: true,
     },
   });
+
+  if (!video) {
+    throw new Error("Video not found");
+  }
+
+  let imagePath = config.baseUrl + "/uploads/video/" + video.image;
+  video.image = imagePath;
 
   return video;
 }

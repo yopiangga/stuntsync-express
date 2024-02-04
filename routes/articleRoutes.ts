@@ -20,7 +20,7 @@ router.get("/", async (req: Request, res: Response, next) => {
 router.get("/:id", async (req: Request, res: Response, next) => {
   try {
     const article = await articleService.getArticleById(
-      parseInt(req.params.id)
+      {id: parseInt(req.params.id)}
     );
     res.json({
       message: "success",

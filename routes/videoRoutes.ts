@@ -19,7 +19,9 @@ router.get("/", async (req: Request, res: Response, next) => {
 
 router.get("/:id", async (req: Request, res: Response, next) => {
   try {
-    const video = await videoService.getVideoById(parseInt(req.params.id));
+    const video = await videoService.getVideoById({
+      id: parseInt(req.params.id)
+    });
     res.json({
       message: "success",
       data: video,
