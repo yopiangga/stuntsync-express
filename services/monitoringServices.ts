@@ -80,3 +80,13 @@ export async function deleteMonitoring(id: number) {
 
   return monitoring;
 }
+
+export async function getMonitoringsByBabyId(babyId: number) {
+  const monitorings = await prisma.monitoring.findMany({
+    where: {
+      babyId,
+    },
+  });
+
+  return monitorings;
+}

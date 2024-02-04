@@ -80,3 +80,17 @@ router.delete("/:id", async (req, res, next) => {
     next(err);
   }
 });
+
+router.get("/baby/:id", async (req: Request, res: Response, next) => {
+  try {
+    const monitorings = await monitoringService.getMonitoringsByBabyId(
+      parseInt(req.params.id)
+    );
+    res.json({
+      message: "success",
+      data: monitorings,
+    });
+  } catch (err) {
+    next(err);
+  }
+});
