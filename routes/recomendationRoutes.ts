@@ -88,3 +88,19 @@ router.delete("/:id", jwtAuthMiddleware, async (req, res, next) => {
     next(err);
   }
 });
+
+router.get("/baby/:id", async (req: Request, res: Response, next) => {
+  try {
+    const recomendations = await recomendationService.getRecomendationsByBabyId(
+      {
+        babyId: parseInt(req.params.id) 
+      }
+    );
+    res.json({
+      message: "success",
+      data: recomendations,
+    });
+  } catch (err) {
+    next(err);
+  }
+})

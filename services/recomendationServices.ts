@@ -105,3 +105,18 @@ export async function deleteRecomendation(id: number) {
 
   return recomendation;
 }
+
+export async function getRecomendationsByBabyId({
+  babyId
+}: {babyId: number}) {
+  const recomendation = await prisma.recomendation.findMany({
+    where: {
+      babyId,
+    },
+    include: {
+      checks: true
+    }
+  });
+
+  return recomendation;
+}
