@@ -82,3 +82,38 @@ export async function updateProfileImage({
 
   return user;
 }
+
+export async function changePassword({
+  id,
+  oldPassword,
+  newPassword,
+}: {
+  id: number;
+  oldPassword: string;
+  newPassword: string;
+}) {
+  const user = await prisma.user.findUnique({
+    where: {
+      id,
+    },
+  });
+
+  if (!user) {
+    throw new Error("User not found");
+  }
+
+  if (user.password !== oldPassword) {
+    throw new Error("Old password is wrong");
+  }
+
+  const updatedUser = await prisma.user.update({
+    where: {
+      id,
+    },
+    data: {
+      password: newPassword,
+    },
+  });
+
+  return updatedUser;
+}

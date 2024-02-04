@@ -58,3 +58,22 @@ router.put("/image", saveFile("user"), async (req, res, next) => {
     next(err);
   }
 });
+
+router.put("/change-password", async (req, res, next) => {
+  const { oldPassword, newPassword } = req.body;
+  const id = parseInt((req as JWTRequest).user.id);
+
+  try {
+    const user = await userService.changePassword({
+      id,
+      oldPassword,
+      newPassword,
+    });
+    res.json({
+      message: "success",
+      data: user,
+    });
+  } catch (err) {
+    next(err);
+  }
+});
