@@ -31,15 +31,16 @@ router.get("/:id", async (req: Request, res: Response, next) => {
 });
 
 router.post("/", async (req, res, next) => {
-  const { babyId, height, weight, head, month } = req.body;
+  const { babyId, height, month } = req.body;
 
   try {
     const monitoring = await monitoringService.createMonitoring({
       babyId,
-      height,
+      height: parseInt(height),
       month,
     });
     res.json({
+      code: 200,
       message: "success",
       data: monitoring,
     });

@@ -1,12 +1,35 @@
 import prisma from "../prisma";
 import { config } from "../config";
 
-export function myProfile({ id }: { id: number }) {
-  return prisma.user.findUnique({
+export async function myProfile({ id }: { id: number }) {
+  const user = await prisma.user.findUnique({
     where: {
       id,
     },
+    include: {
+      baby: true,
+      posyandu: true,
+    },
   });
+
+  if (!user) {
+    throw new Error("User not found");
+  }
+
+  // change image baby
+  if (user.baby) {
+    user.baby.map((baby) => {
+      if (baby.image) {
+        baby.image = config.baseUrl + "/uploads/baby/" + baby.image;
+      }
+    });
+  }
+
+  let imagePath = config.baseUrl + "/uploads/user/" + user.image;
+  user.image = imagePath;
+
+  return user;
+
 }
 
 export async function updateProfile({

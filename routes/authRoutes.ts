@@ -11,6 +11,7 @@ router.post("/signin", async (req, res, next) => {
     const { user, token } = await signIn(email, password);
 
     res.json({
+      code: 200,
       message: "Sign in success",
       data: {
         user,
