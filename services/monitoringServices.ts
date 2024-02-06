@@ -24,7 +24,7 @@ export async function createMonitoring({
 }: {
   babyId: number;
   height: number;
-  month: string;
+  month: number;
 }) {
   const monitoring = await prisma.monitoring.create({
     data: {
@@ -48,7 +48,7 @@ export async function updateMonitoring({
 }: {
   id: number;
   height: number;
-  month: string;
+  month: number;
 }) {
   const monitoring = await prisma.monitoring.update({
     where: {

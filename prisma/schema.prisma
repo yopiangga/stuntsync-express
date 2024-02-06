@@ -66,7 +66,7 @@ model Monitoring {
   babyId    Int
   baby      Baby     @relation(fields: [babyId], references: [id])
   height    Float
-  month     DateTime
+  month     Int
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 }
@@ -75,14 +75,15 @@ model Recomendation {
   id        Int                  @id @default(autoincrement())
   babyId    Int
   baby      Baby                 @relation(fields: [babyId], references: [id])
-  title     String
-  desc      String
+  title     String               @db.Text
+  desc      String               @db.Text
   type      String
+  subType   Int?
   month     Int
   qty       Int
   checks    RecomendationCheck[]
-  userId    Int
-  user      User                 @relation(fields: [userId], references: [id])
+  userId    Int?
+  user      User?                @relation(fields: [userId], references: [id])
   createdAt DateTime             @default(now())
   updatedAt DateTime             @updatedAt
 }
