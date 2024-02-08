@@ -23,7 +23,7 @@ router.post("/signin", async (req, res, next) => {
   }
 });
 
-router.post("/signup", saveFile("user"), async (req, res, next) => {
+router.post("/signup", async (req, res, next) => {
   const { email, password, name, role, posyanduId } = req.body;
 
   try {
