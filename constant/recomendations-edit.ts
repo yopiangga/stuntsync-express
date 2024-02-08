@@ -1587,7 +1587,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 16 – 17 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 16 – 17 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep.",
       qty: 30,
       month: 2,
@@ -1596,7 +1596,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 16 – 17 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 16 – 17 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep.",
       qty: 30,
       month: 3,
@@ -1605,7 +1605,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 14 – 15 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 14 – 15 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 4,
@@ -1614,7 +1614,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 14 – 15 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 14 – 15 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 5,
@@ -1623,7 +1623,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 6,
@@ -1632,7 +1632,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 7,
@@ -1641,7 +1641,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 8,
@@ -1650,7 +1650,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 9,
@@ -1659,7 +1659,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 10,
@@ -1668,7 +1668,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 11,
@@ -1677,7 +1677,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 13 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 13 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 12,
@@ -1686,7 +1686,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 13,
@@ -1695,7 +1695,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 14,
@@ -1704,7 +1704,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 15,
@@ -1713,7 +1713,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 16,
@@ -1722,7 +1722,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 17,
@@ -1731,7 +1731,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 18,
@@ -1740,7 +1740,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 19,
@@ -1749,7 +1749,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 20,
@@ -1758,7 +1758,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 21,
@@ -1767,7 +1767,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 22,
@@ -1776,7 +1776,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 23,
@@ -1785,7 +1785,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 14 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 14 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 24,
@@ -1794,7 +1794,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 25,
@@ -1803,7 +1803,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 26,
@@ -1812,7 +1812,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 27,
@@ -1821,7 +1821,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 28,
@@ -1830,7 +1830,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 29,
@@ -1839,7 +1839,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 30,
@@ -1848,7 +1848,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 31,
@@ -1857,7 +1857,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 32,
@@ -1866,7 +1866,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 33,
@@ -1875,7 +1875,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 34,
@@ -1884,7 +1884,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 35,
@@ -1893,7 +1893,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 36,
@@ -1902,7 +1902,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 37,
@@ -1911,7 +1911,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 38,
@@ -1920,7 +1920,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 39,
@@ -1929,7 +1929,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 40,
@@ -1938,7 +1938,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 41,
@@ -1947,7 +1947,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 42,
@@ -1956,7 +1956,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 43,
@@ -1965,7 +1965,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 44,
@@ -1974,7 +1974,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 45,
@@ -1983,7 +1983,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 46,
@@ -1992,7 +1992,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 47,
@@ -2001,7 +2001,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 48,
@@ -2010,7 +2010,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 49,
@@ -2019,7 +2019,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 50,
@@ -2028,7 +2028,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 51,
@@ -2037,7 +2037,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 52,
@@ -2046,7 +2046,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 53,
@@ -2055,7 +2055,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 54,
@@ -2064,7 +2064,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 55,
@@ -2073,7 +2073,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 56,
@@ -2082,7 +2082,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 57,
@@ -2091,7 +2091,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 58,
@@ -2100,7 +2100,7 @@ export const RECOMENDATIONS: Recomendation[]= [
       subType: null
     },
     {
-      title: "Make sure your baby has a healthy sleep routine 11 – 13 jam per day ",
+      title: "Make sure your baby has a healthy sleep routine 11 – 13 hours per day ",
       desc: " A healthy sleep routine for the baby at this age could consist of night and daytime (nap) sleep. The best range of time for night sleep is 7 PM to 6 AM and daytime sleep is 12 to 2 PM.",
       qty: 30,
       month: 59,
