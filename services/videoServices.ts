@@ -8,11 +8,6 @@ export async function getVideos() {
     },
   });
 
-  let videoPath = config.baseUrl + "/uploads/video/";
-  videos.map((video) => {
-    video.image = videoPath + video.image;
-  });
-
   return videos;
 }
 
@@ -34,23 +29,18 @@ export async function getVideoById({
     throw new Error("Video not found");
   }
 
-  let imagePath = config.baseUrl + "/uploads/video/" + video.image;
-  video.image = imagePath;
-
   return video;
 }
 
 export async function createVideo({
   title,
   desc,
-  image,
   url,
   published,
   userId,
 }: {
   title: string;
   desc: string;
-  image: string;
   url: string;
   published: boolean;
   userId: number;
@@ -59,7 +49,6 @@ export async function createVideo({
     data: {
       title,
       desc,
-      image,
       url,
       published,
       userId,
@@ -69,9 +58,6 @@ export async function createVideo({
   if (!video) {
     throw new Error("Something went wrong");
   }
-
-  let imagePath = config.baseUrl + "/uploads/video/" + video.image;
-  video.image = imagePath;
 
   return video;
 }
@@ -104,32 +90,6 @@ export async function updateVideo({
   if (!video) {
     throw new Error("Something went wrong");
   }
-
-  return video;
-}
-
-export async function updateVideoImage({
-  id,
-  image,
-}: {
-  id: number;
-  image: string;
-}) {
-  const video = await prisma.video.update({
-    where: {
-      id,
-    },
-    data: {
-      image,
-    },
-  });
-
-  if (!video) {
-    throw new Error("Something went wrong");
-  }
-
-  let imagePath = config.baseUrl + "/uploads/video/" + video.image;
-  video.image = imagePath;
 
   return video;
 }

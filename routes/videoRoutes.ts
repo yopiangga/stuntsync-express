@@ -31,16 +31,14 @@ router.get("/:id", async (req: Request, res: Response, next) => {
   }
 });
 
-router.post("/", saveFile("video"), async (req, res, next) => {
+router.post("/", async (req, res, next) => {
   const { title, desc, url, published } = req.body;
-  const image = (req as MulterRequest).uploadedFileName;
   const userId = parseInt((req as JWTRequest).user.id);
 
   try {
     const video = await videoService.createVideo({
       title,
       desc,
-      image,
       url,
       published,
       userId,
@@ -64,23 +62,6 @@ router.put("/:id", async (req, res, next) => {
       desc,
       url,
       published,
-    });
-    res.json({
-      message: "success",
-      data: video,
-    });
-  } catch (err) {
-    next(err);
-  }
-});
-
-router.put("/:id/image", saveFile("video"), async (req, res, next) => {
-  const image = (req as MulterRequest).uploadedFileName;
-
-  try {
-    const video = await videoService.updateVideoImage({
-      id: parseInt(req.params.id),
-      image,
     });
     res.json({
       message: "success",
