@@ -99,7 +99,7 @@ model RecomendationCheck {
 model Article {
   id        Int      @id @default(autoincrement())
   title     String
-  desc      String
+  desc      String   @db.Text
   image     String
   content   String   @db.Text
   published Boolean  @default(true)
@@ -112,7 +112,7 @@ model Article {
 model Video {
   id        Int      @id @default(autoincrement())
   title     String
-  desc      String
+  desc      String   @db.Text
   url       String
   published Boolean  @default(false)
   userId    Int
